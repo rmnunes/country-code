@@ -50,11 +50,44 @@
       </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
+  <dmn:decision id="_CD8AD04C-44EC-4E9A-B69C-8075BA8122FB" name="can-drive">
+    <dmn:extensionElements/>
+    <dmn:variable id="_EB285F0D-9E25-4C75-B7CE-F26323F2F2CA" name="can-drive"/>
+    <dmn:informationRequirement id="_016B2AD9-73EA-488C-8089-90850C448243">
+      <dmn:requiredDecision href="#_D88398AC-EB9A-4E86-A1A6-2E3F1D3B44BD"/>
+    </dmn:informationRequirement>
+    <dmn:decisionTable id="_D917F2EE-AAF8-438B-A9D1-8BD8EED9B040" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_5CBA30F1-A424-4126-B8C2-F5F4FB99B8D4">
+        <dmn:inputExpression id="_5860B37C-7D45-4E85-9CBD-7843EEEEB251" typeRef="string">
+          <dmn:text>code</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_5C0C021F-D146-4E23-8FBC-858335653715"/>
+      <dmn:annotation name="annotation-1"/>
+      <dmn:rule id="_85A9CDC6-9B4C-48E9-A77C-71B11D5FC755">
+        <dmn:inputEntry id="_D0E51462-2B43-43E7-99CD-3172E0168E50">
+          <dmn:text>"CA"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_E61386D6-DCD6-4756-8C5D-F345458C9D4D">
+          <dmn:text>"approved"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
+  </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram id="_B96A9CF1-1971-4FFA-93F2-D577D81776BD" name="DRG">
       <di:extension>
         <kie:ComponentsWidthsExtension>
           <kie:ComponentWidths dmnElementRef="_D7A62846-2455-4ADF-A58B-FAB7F853DAFA">
+            <kie:width>50</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_D917F2EE-AAF8-438B-A9D1-8BD8EED9B040">
             <kie:width>50</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
@@ -80,9 +113,22 @@
         <dc:Bounds x="429" y="181" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-drg-_CD8AD04C-44EC-4E9A-B69C-8075BA8122FB" dmnElementRef="_CD8AD04C-44EC-4E9A-B69C-8075BA8122FB" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="608" y="191" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-drg-_409455C2-DCB2-4A8D-BA52-BF4231AD5F69-AUTO-SOURCE-AUTO-TARGET" dmnElementRef="_409455C2-DCB2-4A8D-BA52-BF4231AD5F69">
         <di:waypoint x="304" y="205"/>
         <di:waypoint x="429" y="206"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_016B2AD9-73EA-488C-8089-90850C448243" dmnElementRef="_016B2AD9-73EA-488C-8089-90850C448243">
+        <di:waypoint x="479" y="206"/>
+        <di:waypoint x="608" y="216"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
