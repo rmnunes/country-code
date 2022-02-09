@@ -119,7 +119,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="608" y="191" width="100" height="50"/>
+        <dc:Bounds x="616" y="181" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-drg-_409455C2-DCB2-4A8D-BA52-BF4231AD5F69-AUTO-SOURCE-AUTO-TARGET" dmnElementRef="_409455C2-DCB2-4A8D-BA52-BF4231AD5F69">
@@ -128,7 +128,7 @@
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_016B2AD9-73EA-488C-8089-90850C448243" dmnElementRef="_016B2AD9-73EA-488C-8089-90850C448243">
         <di:waypoint x="479" y="206"/>
-        <di:waypoint x="608" y="216"/>
+        <di:waypoint x="616" y="206"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
