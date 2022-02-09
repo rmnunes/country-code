@@ -1,1 +1,89 @@
-<?xml version="1.0" ?><dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_DAE0D831-B9BA-4B6A-9827-0331F1FAD38D" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_3EC7D2AA-AE23-4828-AA9C-90325067E852" name="test" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_DAE0D831-B9BA-4B6A-9827-0331F1FAD38D"><dmn:extensionElements/><dmn:itemDefinition id="_12F2FA66-98B9-4C6E-A3FA-1EA9B3EC0C28" name="country" isCollection="false"><dmn:typeRef>string</dmn:typeRef><dmn:allowedValues kie:constraintType="enumeration" id="_97843078-C787-43FA-BEE0-9C47F41A3B35"><dmn:text>"brazil", "canada"</dmn:text></dmn:allowedValues></dmn:itemDefinition><dmn:inputData id="_5D527239-156E-48B4-BFE0-6B712ADDB974" name="country"><dmn:extensionElements/><dmn:variable id="_0633742C-532B-4D97-A9DB-705EDB0BB2E1" name="country" typeRef="string"/></dmn:inputData><dmn:decision id="_D88398AC-EB9A-4E86-A1A6-2E3F1D3B44BD" name="code"><dmn:extensionElements/><dmn:variable id="_743554C7-5A54-48B4-AA3F-66C6352C8E71" name="code" typeRef="string"/><dmn:informationRequirement id="_409455C2-DCB2-4A8D-BA52-BF4231AD5F69"><dmn:requiredInput href="#_5D527239-156E-48B4-BFE0-6B712ADDB974"/></dmn:informationRequirement><dmn:decisionTable id="_D7A62846-2455-4ADF-A58B-FAB7F853DAFA" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row"><dmn:input id="_4E2024BD-57F8-4CAE-A361-9D186B3E4520"><dmn:inputExpression id="_E98BA6CA-9EE7-433B-824E-63BB00FF8F93" typeRef="string"><dmn:text>InputData-1</dmn:text></dmn:inputExpression></dmn:input><dmn:output id="_3523E22B-858D-441E-9616-23ECF4759696"/><dmn:annotation name="anotation"/><dmn:rule id="_C29A1033-C7C8-4221-93A9-E3D5A0152A87"><dmn:inputEntry id="_ED44F2AE-4121-4080-81A5-0737E398A878"><dmn:text>"canada"</dmn:text></dmn:inputEntry><dmn:outputEntry id="_DD03A44B-E056-4002-B3FA-C5E28FEA4B20"><dmn:text>"CA"</dmn:text></dmn:outputEntry><dmn:annotationEntry><dmn:text></dmn:text></dmn:annotationEntry></dmn:rule><dmn:rule id="_B06C5944-9EDC-4258-B7B3-65EE43BBC14C"><dmn:inputEntry id="_85EDC6D0-D3AC-4411-AEB1-CAEF86FE0E75"><dmn:text>"brazil"</dmn:text></dmn:inputEntry><dmn:outputEntry id="_BB548CB4-0CED-4B7A-929C-8837E692765D"><dmn:text>"BR"</dmn:text></dmn:outputEntry><dmn:annotationEntry><dmn:text></dmn:text></dmn:annotationEntry></dmn:rule></dmn:decisionTable></dmn:decision><dmndi:DMNDI><dmndi:DMNDiagram id="_B96A9CF1-1971-4FFA-93F2-D577D81776BD" name="DRG"><di:extension><kie:ComponentsWidthsExtension><kie:ComponentWidths dmnElementRef="_D7A62846-2455-4ADF-A58B-FAB7F853DAFA"><kie:width>50</kie:width><kie:width>100</kie:width><kie:width>100</kie:width><kie:width>100</kie:width></kie:ComponentWidths></kie:ComponentsWidthsExtension></di:extension><dmndi:DMNShape id="dmnshape-drg-_5D527239-156E-48B4-BFE0-6B712ADDB974" dmnElementRef="_5D527239-156E-48B4-BFE0-6B712ADDB974" isCollapsed="false"><dmndi:DMNStyle><dmndi:FillColor red="255" green="255" blue="255"/><dmndi:StrokeColor red="0" green="0" blue="0"/><dmndi:FontColor red="0" green="0" blue="0"/></dmndi:DMNStyle><dc:Bounds x="204" y="180" width="100" height="50"/><dmndi:DMNLabel/></dmndi:DMNShape><dmndi:DMNShape id="dmnshape-drg-_D88398AC-EB9A-4E86-A1A6-2E3F1D3B44BD" dmnElementRef="_D88398AC-EB9A-4E86-A1A6-2E3F1D3B44BD" isCollapsed="false"><dmndi:DMNStyle><dmndi:FillColor red="255" green="255" blue="255"/><dmndi:StrokeColor red="0" green="0" blue="0"/><dmndi:FontColor red="0" green="0" blue="0"/></dmndi:DMNStyle><dc:Bounds x="429" y="181" width="100" height="50"/><dmndi:DMNLabel/></dmndi:DMNShape><dmndi:DMNEdge id="dmnedge-drg-_409455C2-DCB2-4A8D-BA52-BF4231AD5F69-AUTO-SOURCE-AUTO-TARGET" dmnElementRef="_409455C2-DCB2-4A8D-BA52-BF4231AD5F69"><di:waypoint x="304" y="205"/><di:waypoint x="429" y="206"/></dmndi:DMNEdge></dmndi:DMNDiagram></dmndi:DMNDI></dmn:definitions>
+<?xml version="1.0" encoding="UTF-8"?>
+<dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_DAE0D831-B9BA-4B6A-9827-0331F1FAD38D" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_3EC7D2AA-AE23-4828-AA9C-90325067E852" name="test" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_DAE0D831-B9BA-4B6A-9827-0331F1FAD38D">
+  <dmn:extensionElements/>
+  <dmn:itemDefinition id="_12F2FA66-98B9-4C6E-A3FA-1EA9B3EC0C28" name="country" isCollection="false">
+    <dmn:typeRef>string</dmn:typeRef>
+    <dmn:allowedValues kie:constraintType="enumeration" id="_97843078-C787-43FA-BEE0-9C47F41A3B35">
+      <dmn:text>"brazil", "canada"</dmn:text>
+    </dmn:allowedValues>
+  </dmn:itemDefinition>
+  <dmn:inputData id="_5D527239-156E-48B4-BFE0-6B712ADDB974" name="country">
+    <dmn:extensionElements/>
+    <dmn:variable id="_0633742C-532B-4D97-A9DB-705EDB0BB2E1" name="country" typeRef="string"/>
+  </dmn:inputData>
+  <dmn:decision id="_D88398AC-EB9A-4E86-A1A6-2E3F1D3B44BD" name="code">
+    <dmn:extensionElements/>
+    <dmn:question>Type the country name</dmn:question>
+    <dmn:variable id="_743554C7-5A54-48B4-AA3F-66C6352C8E71" name="code" typeRef="string"/>
+    <dmn:informationRequirement id="_409455C2-DCB2-4A8D-BA52-BF4231AD5F69">
+      <dmn:requiredInput href="#_5D527239-156E-48B4-BFE0-6B712ADDB974"/>
+    </dmn:informationRequirement>
+    <dmn:decisionTable id="_D7A62846-2455-4ADF-A58B-FAB7F853DAFA" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_4E2024BD-57F8-4CAE-A361-9D186B3E4520">
+        <dmn:inputExpression id="_E98BA6CA-9EE7-433B-824E-63BB00FF8F93" typeRef="string">
+          <dmn:text>country</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_3523E22B-858D-441E-9616-23ECF4759696"/>
+      <dmn:annotation name="anotation"/>
+      <dmn:rule id="_C29A1033-C7C8-4221-93A9-E3D5A0152A87">
+        <dmn:inputEntry id="_ED44F2AE-4121-4080-81A5-0737E398A878">
+          <dmn:text>"canada"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_DD03A44B-E056-4002-B3FA-C5E28FEA4B20">
+          <dmn:text>"CA"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_B06C5944-9EDC-4258-B7B3-65EE43BBC14C">
+        <dmn:inputEntry id="_85EDC6D0-D3AC-4411-AEB1-CAEF86FE0E75">
+          <dmn:text>"brazil"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_BB548CB4-0CED-4B7A-929C-8837E692765D">
+          <dmn:text>"BR"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
+  </dmn:decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="_B96A9CF1-1971-4FFA-93F2-D577D81776BD" name="DRG">
+      <di:extension>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_D7A62846-2455-4ADF-A58B-FAB7F853DAFA">
+            <kie:width>50</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
+      </di:extension>
+      <dmndi:DMNShape id="dmnshape-drg-_5D527239-156E-48B4-BFE0-6B712ADDB974" dmnElementRef="_5D527239-156E-48B4-BFE0-6B712ADDB974" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="204" y="180" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-drg-_D88398AC-EB9A-4E86-A1A6-2E3F1D3B44BD" dmnElementRef="_D88398AC-EB9A-4E86-A1A6-2E3F1D3B44BD" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="429" y="181" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="dmnedge-drg-_409455C2-DCB2-4A8D-BA52-BF4231AD5F69-AUTO-SOURCE-AUTO-TARGET" dmnElementRef="_409455C2-DCB2-4A8D-BA52-BF4231AD5F69">
+        <di:waypoint x="304" y="205"/>
+        <di:waypoint x="429" y="206"/>
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</dmn:definitions>
